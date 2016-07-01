@@ -5,7 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 [![Platform](https://img.shields.io/cocoapods/p/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 
-<iframe src='https://gfycat.com/ifr/SpottedTenderEyelashpitviper' frameborder='0' scrolling='no' width='640' height='1142.8571428571427' allowfullscreen></iframe>
+![alt text](http://i.giphy.com/3oEjHZYbYF0twr4Mms.gif "Swiping")
+<img src="http://i.giphy.com/3oEjHZYbYF0twr4Mms.gif"/>
 
 ## Example
 
