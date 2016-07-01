@@ -1,9 +1,11 @@
 # MXCardsSwipingView
 
-[![CI Status](http://img.shields.io/travis/Scott Kensell/MXCardsSwipingView.svg?style=flat)](https://travis-ci.org/Scott Kensell/MXCardsSwipingView)
+<!--[![CI Status](http://img.shields.io/travis/Scott Kensell/MXCardsSwipingView.svg?style=flat)](https://travis-ci.org/Scott Kensell/MXCardsSwipingView)-->
 [![Version](https://img.shields.io/cocoapods/v/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 [![License](https://img.shields.io/cocoapods/l/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 [![Platform](https://img.shields.io/cocoapods/p/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
+
+<iframe src='https://gfycat.com/ifr/SpottedTenderEyelashpitviper' frameborder='0' scrolling='no' width='640' height='1142.8571428571427' allowfullscreen></iframe>
 
 ## Example
 
