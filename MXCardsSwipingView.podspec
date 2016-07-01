@@ -24,7 +24,7 @@ enqueue more cards when its delegate methods are called.  And the card you enque
   s.author           = { 'Scott Kensell' => 'skensell@gmail.com' }
   s.source           = { :git => 'https://github.com/skensell/MXCardsSwipingView.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
   s.source_files = 'MXCardsSwipingView/Classes/**/*'
   s.frameworks = 'UIKit'
 end
