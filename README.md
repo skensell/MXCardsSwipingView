@@ -5,8 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 [![Platform](https://img.shields.io/cocoapods/p/MXCardsSwipingView.svg?style=flat)](http://cocoapods.org/pods/MXCardsSwipingView)
 
-![alt text](http://i.giphy.com/3oEjHZYbYF0twr4Mms.gif "Swiping")
-<img src="http://i.giphy.com/3oEjHZYbYF0twr4Mms.gif"/>
+![Swiping example](http://i.giphy.com/26BRuvxrEWDD9252g.gif)
 
 ## Example
 
