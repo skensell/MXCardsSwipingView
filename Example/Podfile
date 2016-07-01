@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MXCardsSwipingView_Example' do
+  pod 'MXCardsSwipingView', :path => '../'
+
+  target 'MXCardsSwipingView_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
