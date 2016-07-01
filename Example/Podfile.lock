@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (2.4.0)
+  - MXCardsSwipingView (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - MXCardsSwipingView (from `../`)
+
+EXTERNAL SOURCES:
+  MXCardsSwipingView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  MXCardsSwipingView: ab2b423fb3c8cab52a24b3c7caf67e351080a235
+
+PODFILE CHECKSUM: 79a4b8a55cd688dadaf794296111c05a86202e17
+
+COCOAPODS: 1.0.1
