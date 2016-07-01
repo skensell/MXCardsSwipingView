@@ -21,8 +21,10 @@
 
 @protocol MXCardsSwipingViewDelegate <NSObject>
 
-// Use this method to enqueue more cards if necessary.
-// The card being dismissed still counts as in the queue.
+/**
+ Called when `card` is dismissed either by a finger swipe or programmatically by `dismissTopCardTo{Left,Right}`.
+ `card` still counts towards the number returned from `numberOfCardsInQueue`, so subtract 1 to get the number left.
+ */
 - (void)cardsSwipingView:(MXCardsSwipingView*)cardsSwipingView willDismissCard:(UIView*)card toLeft:(BOOL)toLeft;
 
 @end
@@ -31,10 +33,17 @@
 
 @property (nonatomic, weak) id<MXCardsSwipingViewDelegate> delegate;
 
+
+/**
+ Adds the card as a subview behind all the previously added cards.
+ 
+ @param card If `card` implements `prepareToBecomeTopCard` or `prepareToBecomeBackgroundCard` of the
+     `MXSwipableCard` protocol, then the appropriate one will be called, without animating the changes.
+*/
 - (void)enqueueCard:(UIView*)card;
 - (UIView*)dismissTopCardToLeft;
 - (UIView*)dismissTopCardToRight;
-- (void)clearQueue;
 - (NSUInteger)numberOfCardsInQueue;
+- (void)clearQueue;
 
 @end
