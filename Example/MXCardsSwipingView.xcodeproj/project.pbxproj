@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		765250C91D2681600061E292 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765250C81D2681600061E292 /* Launch Screen.storyboard */; };
+		765250CC1D2685B20061E292 /* MXMemberCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 765250CB1D2685B20061E292 /* MXMemberCardView.m */; };
 		90F2F9E3BB145A4C7B818077 /* Pods_MXCardsSwipingView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B72911274464F7131B5F682 /* Pods_MXCardsSwipingView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63E650017E88F139C670BEB1 /* Pods-MXCardsSwipingView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXCardsSwipingView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MXCardsSwipingView_Tests/Pods-MXCardsSwipingView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		765250C81D2681600061E292 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		765250CA1D2685B20061E292 /* MXMemberCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMemberCardView.h; sourceTree = "<group>"; };
+		765250CB1D2685B20061E292 /* MXMemberCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMemberCardView.m; sourceTree = "<group>"; };
 		79FF9A393AAC11565BB7A089 /* Pods-MXCardsSwipingView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MXCardsSwipingView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MXCardsSwipingView_Example/Pods-MXCardsSwipingView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7C1DC9FEBA5E5F3E8BAE47DF /* Pods_MXCardsSwipingView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXCardsSwipingView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B72911274464F7131B5F682 /* Pods_MXCardsSwipingView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXCardsSwipingView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,8 @@
 				6003F59D195388D20070C39A /* MXAppDelegate.m */,
 				6003F5A5195388D20070C39A /* MXViewController.h */,
 				6003F5A6195388D20070C39A /* MXViewController.m */,
+				765250CA1D2685B20061E292 /* MXMemberCardView.h */,
+				765250CB1D2685B20061E292 /* MXMemberCardView.m */,
 				765250C81D2681600061E292 /* Launch Screen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -393,6 +398,7 @@
 				6003F59E195388D20070C39A /* MXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				765250CC1D2685B20061E292 /* MXMemberCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

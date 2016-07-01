@@ -9,8 +9,11 @@
 #import "MXViewController.h"
 
 #import <MXCardsSwipingView/MXCardsSwipingView.h>
+#import "MXMemberCardView.h"
 
 @interface MXViewController () <MXCardsSwipingViewDelegate>
+
+@property (nonatomic, strong) MXCardsSwipingView* cardsSwipingView;
 
 @end
 
@@ -20,6 +23,10 @@
     [super viewDidLoad];
     MXCardsSwipingView *cardsSwipingView = [[MXCardsSwipingView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 60)];
     cardsSwipingView.delegate = self;
+    self.cardsSwipingView = cardsSwipingView;
+    [self addCard];
+    [self addCard];
+    [self addCard];
     
     UIButton *notNowButton = [[UIButton alloc] init];
     [notNowButton setTitle:@"Not Now" forState:UIControlStateNormal];
@@ -31,7 +38,7 @@
     
     UIButton *connectButton = [[UIButton alloc] init];
     [connectButton setTitle:@"Connect" forState:UIControlStateNormal];
-    [connectButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [connectButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     connectButton.titleLabel.font = [UIFont fontWithName:@"Avenir-Medium" size:18];
     [connectButton sizeToFit];
     connectButton.frame = CGRectMake(self.view.bounds.size.width - (20 + connectButton.bounds.size.width), notNowButton.frame.origin.y, connectButton.bounds.size.width, connectButton.bounds.size.height);
@@ -43,7 +50,14 @@
 }
 
 - (void)cardsSwipingView:(MXCardsSwipingView *)cardsSwipingView willDismissCard:(UIView *)card toLeft:(BOOL)toLeft {
-    
+    [self addCard];
+}
+
+- (void)addCard {
+    MXMemberCardView* card = [[MXMemberCardView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width - 40, (self.view.bounds.size.width - 40)/[MXMemberCardView aspectRatio])];
+    [card setupWithAModel:nil];
+    [card addShadow];
+    [self.cardsSwipingView enqueueCard:card];
 }
 
 @end
