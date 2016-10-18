@@ -49,8 +49,11 @@
     [self.view addSubview:cardsSwipingView];
 }
 
-- (void)cardsSwipingView:(MXCardsSwipingView *)cardsSwipingView willDismissCard:(UIView *)card toLeft:(BOOL)toLeft {
+- (BOOL)cardsSwipingView:(MXCardsSwipingView *)cardsSwipingView willDismissCard:(UIView *)card toLeft:(BOOL)toLeft {
+    static int i=0;
+    if (++i % 5 == 0) return NO;
     [self addCard];
+    return YES;
 }
 
 - (void)addCard {

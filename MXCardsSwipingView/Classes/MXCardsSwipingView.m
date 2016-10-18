@@ -96,7 +96,7 @@ static const CGFloat kMXDistanceFromCenterShowViewsThreshold = 10.0f;
 
 - (UIView*)dismissTopCardToLeft:(BOOL)toLeft {
     UIView* topCard = [self topCard];
-    if (!topCard) {
+    if (!topCard || ![self.delegate cardsSwipingView:self willDismissCard:topCard toLeft:toLeft]) {
         return nil;
     }
     UIAttachmentBehavior* attachment = [self attachCard:topCard ToPoint:CGPointMake(topCard.center.x, topCard.center.y + 40)];
@@ -105,7 +105,6 @@ static const CGFloat kMXDistanceFromCenterShowViewsThreshold = 10.0f;
     UIView* accessoryView = toLeft ? [MXCardsSwipingView viewShownOnSwipeLeftForCard:topCard] : [MXCardsSwipingView viewShownOnSwipeRightForCard:topCard];
     accessoryView.hidden = NO;
     accessoryView.alpha = 1.0f;
-    [self.delegate cardsSwipingView:self willDismissCard:topCard toLeft:toLeft];
     [self dismissCard:topCard toPoint:newAnchor viaAttachment:attachment];
     return topCard;
 }
@@ -136,7 +135,12 @@ static const CGFloat kMXDistanceFromCenterShowViewsThreshold = 10.0f;
         if (destination == MXCardDestinationCenter) {
             [self restoreTopCardToCenter];
         } else {
-            [self.delegate cardsSwipingView:self willDismissCard:topCard toLeft:(destination == MXCardDestinationLeft)];
+            BOOL continueDismissing = [self.delegate cardsSwipingView:self willDismissCard:topCard toLeft:(destination == MXCardDestinationLeft)];
+            
+            if (!continueDismissing) {
+                [self restoreTopCardToCenter];
+                return;
+            }
             
             if (destination == MXCardDestinationLeft && velocity.x > -kMXMinimumSpeedForDismissal) {
                 velocity = CGPointMake(-kMXMinimumSpeedForDismissal, 0);
