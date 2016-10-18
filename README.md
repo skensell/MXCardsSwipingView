@@ -19,7 +19,7 @@ A lightweight solution for introducing swipable cards like Tinder or AngelList. 
 ```
 Create an `MXCardsSwipingView` and add it to your view hierarchy. Add cards to it with `enqueueCard:`. Each card added is immediately added to the view heirarchy behind the previously enqueued cards. When a card is dismissed you can enqueue more during the delegate callback 
 ```Objective-C
-- (void)cardsSwipingView:(MXCardsSwipingView*)cardsSwipingView willDismissCard:(UIView*)card toLeft:(BOOL)toLeft;
+- (BOOL)cardsSwipingView:(MXCardsSwipingView*)cardsSwipingView willDismissCard:(UIView*)card toLeft:(BOOL)toLeft;
 ```
 A card can be any `UIView`, but you can get more customizability by adopting the `MXSwipableCard` protocol (e.g. to fade in a certain subview of the card depending on the swipe direction).
 
