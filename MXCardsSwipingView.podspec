@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MXCardsSwipingView'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A UIView offering Tinder style card swiping on iOS.'
 
   s.description      = <<-DESC
