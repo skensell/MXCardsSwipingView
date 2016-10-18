@@ -24,8 +24,10 @@
 /**
  Called when `card` is dismissed either by a finger swipe or programmatically by `dismissTopCardTo{Left,Right}`.
  `card` still counts towards the number returned from `numberOfCardsInQueue`, so subtract 1 to get the number left.
+ 
+ return YES to continue dismissing the card or NO to cancel the dismissal and recenter the card.
  */
-- (void)cardsSwipingView:(MXCardsSwipingView*)cardsSwipingView willDismissCard:(UIView*)card toLeft:(BOOL)toLeft;
+- (BOOL)cardsSwipingView:(MXCardsSwipingView*)cardsSwipingView willDismissCard:(UIView*)card toLeft:(BOOL)toLeft;
 
 @end
 
